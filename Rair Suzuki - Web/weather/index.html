@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-witdh, initial-scale=1.0">
+    <title>Clima</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/icon.png">
+</head>
+
+<body>
+    <div class="wheather-block">
+        <div class="search-block ">
+            <input onkeyup="enter()" type="text" id="city" placeholder="Verifique o clima de sua cidade" autocomplete="off">
+        </div>
+        <p id="p"></p>
+        <div class="wheather" id="wheather-js">
+
+            <div class="wheather-info-left">
+                <span id="city-name"></span>
+                <span id="country"></span><br>
+                <div class="fix">
+                    <span id="date"></span>
+                    <span id="hours"></span><br>
+                    <span id="temperature"></span>
+                    <div id="feels-temperature"></div>
+                </div>
+            </div>
+            <div class="wheather-info-right">
+                <div class="wheather-info-right-upper">
+                    <img id="img-icon" src="" alt="">
+                    <span id="wheather-desc"></span><br>
+                </div>
+                <div class="wheather-info-right-lower">
+                    <span id="humidity"></span><br>
+                    <span id="wind"></span><br>
+                    <span id="clouds-prct"></span><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

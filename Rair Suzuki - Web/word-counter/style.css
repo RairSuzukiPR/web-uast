@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    box-sizing: content-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    width: 11px;
+}
+
+body {
+    background-color: rgb(247, 248, 249);
+}
+
+h1 {
+    width: 40%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.header {
+    width: 100%;
+    min-width: 450px;
+    height: 70px;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+    box-shadow: 0 0.5em 2em rgba(27,41,42,0.0625);
+}
+
+.diff-and-text-block {
+    width: 20%;
+    min-width: 300px;
+    height: 80px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 7px;
+}
+
+#diffculty-block pre {
+    font-size: 18px;
+}
+
+#txt-ref{
+    font-size: 20px;
+}
+
+input {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 4px 10px 5px 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.lvl-block {
+    height: 30px;
+}
+
+#lvl-info {
+    text-align: center;
+}
+
+.textArea-and-info-block {
+    width: 40%;
+    min-width: 450px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px auto;
+}
+
+#label {
+    margin-bottom: 5px;
+}
+
+#txt-a {
+    border-radius: 10px;
+    resize: none;
+    font-size: 16px;
+    padding: 6px 10px;
+}
+
+::placeholder {
+    padding: 2px;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.end-messsage-block {
+    text-align: center;
+    width: 40%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+#end-message {
+    display: flex;
+    justify-content: space-around;
+}
+
+#result, #time-left-p, #end-message {
+    font-size: 20px;
+}
+
+a {
+   text-decoration: none;
+}
+
+a:visited{
+    color: inherit;
+}
+
+.close-button {
+    position: absolute;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+.instr-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+}
+
+.instr {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 215px;
+    background-color: white;
+    border-radius: 7px;
+    padding: 12px 15px;
+    font-size: 16px;
+}
+
+h3 {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.instr p:last-of-type {
+    font-size: 11.5px;
+}

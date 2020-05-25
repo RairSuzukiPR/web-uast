@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-witdh, initial-scale=1.0">
+    <title>Contador de Palavras</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://img.icons8.com/color/48/000000/keyboard.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h1>Contador de Palavras</h1>
+        </div>
+    </header>
+    <main class="main">
+        <div class="diff-and-text-block">
+            <div id="diffculty-block">
+                <pre>Escolha a dificuldade:</pre>
+                <div class="buttons">
+                    <input type="button" value="Normal" id="normal">
+                    <input type="button" value="Hard" id="hard">
+                </div>
+            </div>
+            <p id = txt-ref></p>
+        </div>
+        <div class="lvl-block">
+            <div id="lvl-info">Nível <span id="level">1</span>. Digite <span id="qt-words">2</span> palavras:</div>
+        </div>
+
+        <div class="textArea-and-info-block">
+            <textarea id="txt-a" cols="100" rows="10" placeholder="Digite o texto a cima..." readonly></textarea><br>
+            <span id="time-left-p">Tempo restante: <span id="time-left">10</span></span>
+            <p id="result"></p>
+            <br>
+        </div>
+        <div class="end-messsage-block">
+            <div id="end-message"></div>
+        </div>
+
+    <div class="instr-block">
+        <div class="instr">
+            <a class="close-button" href="#">&times;</a>
+            <h3>Instruções:</h3><br><br>
+            <p>Normal: 5 Níveis começando em 10seg com acréscimo de 2seg a cada nível com texto simples.</p><br>
+            <p>Hard: 10 Níveis começando em 10seg com acréscimo de 2seg a cada nível com texto em Latin.</p><br>
+            <p>Para iniciar clique na caixa de texto após escolher a dificuldade. Todas as palavras são embaralhadas após o fim de cada nível.</p>
+        </div>
+    </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
